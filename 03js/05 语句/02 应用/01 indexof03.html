@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indexof</title>
+    <script>
+
+        String.prototype.indexof3=function (word) {
+            var index =-1;
+            for(var i=0;i<this.length;i++){
+                if(this[i]==word){
+                    index=i;
+                    return index;
+                }
+
+            }
+        }
+
+        var  data = "你好啊！！，你到底是谁，什么！";
+
+        console.log(data.indexof3('谁'));
+        
+
+
+
+    </script>
+<body>
+
+</body>
+</html>

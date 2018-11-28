@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function Person(name,age) {
+            this.name=name;
+            this.age=age;
+        }
+
+        var person = new Person("小刚",18);
+
+        console.log(JSON.stringify(person));
+
+        var data ='{'
+        for(key in person){
+
+            data=data+"'"+key+"':"+person[key]+','
+        }
+
+        data = data.substring(0,data.length-1);
+        data=data+"}"
+
+        console.log(data);
+
+    </script>
+<body>
+
+</body>
+</html>

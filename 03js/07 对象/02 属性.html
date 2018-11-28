@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02 属性</title>
+    <script>
+
+        function Person(name,age) {
+            this.name=name;
+            this.age=age;
+        }
+b
+        var person = new Person("小刚",18);
+
+        //1,有两种访问方式：点(.)、中括号([])；
+        console.log(person.name);
+        console.log(person['name']);
+
+        //3,属性的设置
+        person.sex="男"
+
+        console.log('name' in person);
+
+        //4,属性的删除
+        delete person.name;
+
+        //5,检测属性
+        console.log('name' in person);
+
+        //2,枚举属性
+        for(key in person){
+            console.log(key+"=("+person[key]+")");
+        }
+
+
+       var student = {
+            get age(){
+              return 18
+            }
+       }
+
+        console.log(student.age+"岁");
+
+
+    </script>
+<body>
+
+</body>
+</html>

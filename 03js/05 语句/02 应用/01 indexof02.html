@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indexof</title>
+    <script>
+
+        var  data = "你好啊！！，你到底是谁，什么！";
+
+        console.log(indexof('什',data));
+        
+        
+        function indexof(word,data) {
+            var index =-1;
+            for(var i=0;i<data.length;i++){
+                if(data[i]==word){
+                    index=i;
+                    return index;
+                }
+
+            }
+        }
+
+
+    </script>
+<body>
+
+</body>
+</html>

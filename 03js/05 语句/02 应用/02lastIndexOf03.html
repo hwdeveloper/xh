@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lastIndexOf</title>
+    <script>
+        
+        String.prototype.hao123=function (word) {
+            var index =-1;
+            for(var i=this.length-1;i>=0;i--){
+                if(word==this[i]){
+                    index =i;
+                    return index;
+                }
+            }
+        }
+
+        var name ="小刚，你刚刚在做什么，我刚刚看到像小刚的同学刚刚出去";
+
+        console.log(name.hao123('刚'));
+
+
+    </script>
+<body>
+
+</body>
+</html>
