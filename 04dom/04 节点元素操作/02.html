@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 80px;
+            height: 40px;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            background: #3388ff;
+        }
+
+        .box2{
+            width: 80px;
+            height: 500px;
+            color: black;
+            text-align: center;
+            background: white;
+            border: 1px solid gray;
+        }
+
+    </style>
+
+<body>
+
+<div id="box" onmouseout="mouseOut()" onmouseover="mouseIn()">
+    更多产品
+</div>
+<script>
+
+    var div = document.getElementById('box');
+    function mouseOut() {
+        div.setAttribute('class',"box1")
+    }
+
+    function mouseIn() {
+        div.setAttribute('class',"box2")
+    }
+
+</script>
+</body>
+</html>

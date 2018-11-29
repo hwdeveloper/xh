@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移除节点</title>
+<body>
+
+<div>
+  <table id="table">
+      <tr>
+          <td>ID</td><td>姓名</td><td>年龄</td><td>是否保存</td><td>删除</td>
+      </tr>
+  </table>
+</div>
+
+<script>
+var data=[{
+    id:1,
+    name:'小刚',
+    age:18,
+},{
+    id:2,
+    name:'小林',
+    age:18,
+},{
+    id:3,
+    name:'小杨',
+    age:18,
+},{
+    id:4,
+    name:'小李',
+    age:18,
+}];
+
+//1,获得table的节点对象
+var table = document.getElementById('table')
+//1，对数据进行遍历
+data.forEach(function (person) {
+    var tr = document.createElement('tr');
+
+    tr.setAttribute('id',"tr"+person.id);
+    tr.innerHTML="<td>"+person.id+"</td><td>"+person.name+"</td><td>"+person.age+"</td><td><button>是否保存</button></td><td><button onclick='deleteTr("+person.id+")'>删除</button></td>"
+
+    table.appendChild(tr)
+    
+})
+    
+    function deleteTr(id) {
+        //1,获得tr
+        var tr = document.getElementById("tr"+id);
+        //2,删除数据
+        tr.remove();
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>

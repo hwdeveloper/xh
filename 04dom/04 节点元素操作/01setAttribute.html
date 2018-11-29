@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setAttribute</title>
+    <style>
+        #title{
+            color: #3388ff;
+        }
+
+        .h1Class{
+            background: green;
+        }
+    </style>
+<body>
+
+<h1>
+    标题
+</h1>
+
+<script>
+    //1,获得标签元素
+    var h1s = document.getElementsByTagName('h1');
+
+    h1s[0].setAttribute("id","title");
+
+    h1s[0].setAttribute('class',"h1Class");
+
+
+    h1s[0].removeAttribute('class',"h1Class");
+
+
+
+</script>
+</body>
+</html>

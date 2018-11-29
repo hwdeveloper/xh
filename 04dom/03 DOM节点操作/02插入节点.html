@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建节点</title>
+<body>
+<div id="box">
+
+
+</div>
+
+</body>
+
+
+<script>
+    //1, 创建节点
+    var img = document.createElement('img');
+    //(1)添加图片地址
+    img.src="http://b.hiphotos.baidu.com/image/pic/item/0ff41bd5ad6eddc4802878ba34dbb6fd536633a0.jpg";
+    //(2)修改大小
+    img.style.width="400px";
+    img.style.height="400px";
+    //(3)修改边框
+    img.style.borderRadius="20px"
+
+    //2,获得当前的接点
+    var div = document.getElementById('box');
+    //3,添加节点
+    div.appendChild(img);
+
+
+
+
+</script>
+</html>

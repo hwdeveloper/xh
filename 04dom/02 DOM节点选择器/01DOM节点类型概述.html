@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+     .titleClass{
+         color: #3388ff;
+     }
+
+    </style>
+<body>
+<h1 id="title" >
+    显示的内容
+</h1>
+
+<h1  class="titleClass">
+    显示的内容
+</h1>
+
+<h1  class="titleClass">
+    显示的内容
+</h1>
+
+
+</body>
+<script>
+    //1,getElementById
+    var h1 = document.getElementById('title');
+    console.log(h1.innerHTML);
+    //图片懒加载
+    //2,getElementsByTagName
+    var h1s = document.getElementsByTagName('h1');
+    console.log(h1s);
+
+    //3,getElementsByClassName
+    var h1ss = document.getElementsByClassName('titleClass');
+    console.log(h1ss);
+
+
+
+
+
+
+</script>
+</html>
