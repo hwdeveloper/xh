@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forEach</title>
+    <script>
+        var array=["小刚","小明","小红","小林","小明","李明","张华"];
+
+        // array.forEach(function (item) {
+        //     console.log(item);
+        // })
+        
+        var call =function (item) {
+            console.log(item);
+        }
+        
+        
+        forEach(array,call);
+        
+        function forEach(array,killer) {
+            //1,获得数组的长度
+            var length = array.length;
+            for(var i=0;i<length;i++){
+                killer(array[i]);
+            }
+            
+        }
+
+    </script>
+<body>
+
+</body>
+</html>

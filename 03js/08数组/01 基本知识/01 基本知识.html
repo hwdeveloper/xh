@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01 基本知识</title>
+    <script>
+
+       //1,new的数组
+        var  arrar1 = new Array();
+
+       //2,字面量的形式，效率相对高
+        var array2 =[1,2,3,4,5,6];
+
+
+        //3,读写数组
+        for(var i=0;i<10;i++){
+            //写数据
+            arrar1[i]=i;
+            //读数据
+            //console.log(arrar1[i]);
+        }
+
+        //4,稀疏数组
+        console.log(array2.length);
+       array2[100]=25;
+       console.log(array2.length);
+
+
+       //5,Array.isArray
+        console.log(Array.isArray(array2));
+
+    </script>
+<body>
+
+</body>
+</html>

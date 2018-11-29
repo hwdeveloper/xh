@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forEach</title>
+    <script>
+        
+        Array.prototype.hao123=function (killer) {
+            //1,获得数组的长度
+            var length = this.length;
+            for(var i=0;i<length;i++){
+                killer(this[i]);
+            }
+        }
+        var array=["小刚","小明","小红","小林","小明","李明","张华"];
+
+        array.hao123(function (item) {
+            console.log("自己写的方法"+item);
+        })
+        console.log("***************");
+        array.forEach(function (item) {
+            console.log("系统自带的方法"+item);
+        })
+
+
+    </script>
+<body>
+
+</body>
+</html>

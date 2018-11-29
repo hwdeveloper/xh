@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>为数组排序</title>
+    <script>
+
+        var nums = [1,2,3,4,5];
+        //nums.reverse();
+
+        //console.log(nums);
+
+        //1,获得数组的长度
+        var length =nums.length;
+
+        for(var i=0;i<Math.floor(length/2);i++){
+
+            var buffer = nums[i];//1
+            nums[i]=nums[length-1-i];//5
+            nums[length-1-i]=buffer;
+            console.log(i);
+        }
+        console.log(nums);
+
+
+
+    </script>
+<body>
+
+</body>
+</html>

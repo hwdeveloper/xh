@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>从数组中间位置删除元素</title>
+    <script>
+        var nums = [1,2,3,100,200,300,400,4,5];
+         //splice(start,num)从下标start开始，删除num数量的元素
+        // var buffer=   nums.splice(3,4);
+        // console.log(nums);
+        // console.log(buffer);
+        
+        function splice(array,start,num) {
+            //1,获得数组的长度
+            var length =array.length;
+            for(var i=start+num;i<length;i++){
+                array[i-num]= array[i];
+            }
+            array.length=array.length-num;
+            return array;
+        }
+
+        console.log(splice(nums,3,4));
+
+    </script>
+<body>
+
+</body>
+</html>
