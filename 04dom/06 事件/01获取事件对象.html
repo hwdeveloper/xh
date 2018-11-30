@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01获取事件对象</title>
+    <style>
+        .button{
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            background: gray;
+            color: whitesmoke;
+            text-align: center;
+            border: 1px solid bisque;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+<body>
+
+<div class="button" id="button">你好</div>
+
+
+<div class="button" id="">我好</div>
+
+<div class="button" id="">你好</div>
+
+<div class="button" id="">你好</div>
+</body>
+<script>
+
+    //1,获得元素节点
+    var button =document.getElementById('button');
+    //2,设置点击事件
+    button.onclick=function (ev) {
+        alert("你好");
+    }
+</script>
+</html>

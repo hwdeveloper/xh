@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01 鼠标事件</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: rosybrown;
+            border: 1px solid darkcyan;
+        }
+    </style>
+
+<body>
+<div id="button" class="box">
+
+</div>
+
+</div>
+
+<script>
+
+    //1,获得按钮
+    var button =document.getElementById('button');
+    //2,设置点击事件
+    button.onmouseover=function (ev) {
+        button.style.background="red";
+    }
+    
+    button.onmouseout=function (ev) {
+        button.style.background="rosybrown";
+    }
+
+</script>
+</body>
+</html>

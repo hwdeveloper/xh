@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件目标</title>
+    <style>
+        .button{
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            background: gray;
+            color: whitesmoke;
+            text-align: center;
+            border: 1px solid bisque;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+<body>
+
+<div class="button" id="button">你好</div>
+
+</body>
+<script>
+
+    //1,获得元素节点
+    var button =document.getElementById('button');
+    //2,设置点击事件
+    button.onclick=function (ev) {
+        ev.target.style.background="red";
+    }
+
+
+
+
+
+</script>
+</html>

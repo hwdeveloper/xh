@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01 鼠标事件</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: rosybrown;
+            border: 1px solid darkcyan;
+        }
+    </style>
+
+<body>
+<div id="" class="box">
+
+</div>
+
+<div id="" class="box">
+
+</div>
+
+<div id="" class="box">
+
+</div>
+
+<div id="" class="box">
+
+</div>
+
+
+<script>
+
+    //1,获得按钮
+    var buttons =document.getElementsByClassName('box');
+    //2,获得数量
+    var number = buttons.length;
+
+    for(var i=0;i<number;i++){
+        var button = buttons[i];
+        //2,设置点击事件
+        button.onmouseover=function (ev) {
+            ev.target.style.background="red";
+        }
+
+        button.onmouseout=function (ev) {
+            ev.target.style.background="rosybrown";
+        }
+    }
+
+
+</script>
+</body>
+</html>
