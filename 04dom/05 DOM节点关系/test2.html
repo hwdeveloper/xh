@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+<body>
+
+<div class="parentMenu" onclick="setListMenu(this)">
+    菜单一
+</div>
+<div style="display: none">
+    <ul>
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+    </ul>
+</div>
+<div class="parentMenu" onclick="setListMenu(this)">
+    菜单二
+</div>
+<div style="display: none">
+    <ul>
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+    </ul>
+</div>
+<div  class="parentMenu"  onclick="setListMenu(this)">
+    菜单三
+</div>
+<div style="display: none">
+    <ul>
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+    </ul>
+</div>
+
+</body>
+
+<script>
+
+    //1,创建一个缓存的节点
+    var buffer;
+    function setListMenu(div) {
+        //1,获得当前节点的下一个节点
+       var next =div.nextElementSibling;
+       //2,验证它是否显示
+        console.log(next.style.display);
+        if(next.style.display==""){
+            return;
+        }
+        //(3)把以前显示的节点隐藏
+        if(buffer!=null)
+            buffer.style.display="none"
+        //(4)显示当前的节点
+        next.style.display="";
+        //(5)当前的节点就变成下次点击的缓存节点
+        buffer = next;
+    }
+    
+</script>
+</html>

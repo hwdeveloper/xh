@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+<body>
+
+<div class="parentMenu" onclick="setListMenu(this)">
+    菜单一
+</div>
+<div style="display: none">
+    <ul>
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+    </ul>
+</div>
+<div class="parentMenu" onclick="setListMenu(this)">
+    菜单二
+</div>
+<div style="display: none">
+    <ul>
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+    </ul>
+</div>
+<div  class="parentMenu"  onclick="setListMenu(this)">
+    菜单三
+</div>
+<div style="display: none">
+    <ul>
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+    </ul>
+</div>
+
+</body>
+
+<script>
+
+    //1,所有的  菜单按钮
+    var  parentMens = document.getElementsByClassName('parentMenu');
+    function setListMenu(div) {
+        //把一起的菜单全部收起来
+        //(1)获得菜单的数量
+        var length =parentMens.length;
+        //(2)遍历每个菜单按钮
+        for(var i=0;i<length;i++){
+            //(3)获得每个菜单按钮的下一个元素节点
+          var nextElement=  parentMens[i].nextElementSibling
+          //(4)隐藏当前的节点
+            nextElement.style.display="none";
+        }
+        //当前节点的下一个节点
+        var next = div.nextElementSibling;
+        //显示当前的节点元素
+        next.style.display="";
+
+    }
+    
+</script>
+</html>

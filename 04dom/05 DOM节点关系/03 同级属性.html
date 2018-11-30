@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>同级属性</title>
+<body>
+<ul >
+    <li id="li1">第一个数据</li>
+    <li id="li2">第二个数据</li>
+    <li id="li3">第三个数据</li>
+    <li id="li4">第四个数据</li>
+</ul>
+
+<script>
+   var li = document.getElementById('li2');
+
+   //1.当前节点的下一个节点元素
+   console.log(li.nextElementSibling);
+   //2,获得当前节点的前一个节点元素
+    console.log(li.previousElementSibling);
+
+</script>
+</body>
+</html>

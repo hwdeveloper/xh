@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .button1{
+
+            background: #3388ff;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            color: honeydew;
+            line-height: 40px;
+
+        }
+
+        .button2{
+            background: whitesmoke;
+            width: 100px;
+            height: 200px;
+            color: black;
+            padding-top: 10px;
+            text-align: center;
+            border: #99a6c4 1px solid;
+
+        }
+
+
+    </style>
+
+<body>
+
+<div id="button" class="button1" onmouseover="mouseOver()" onmouseout="mouseOut()">
+       更多产品
+</div>
+
+</body>
+
+<script>
+
+    //1,获得当前更多产品的 标签
+    var button = document.getElementById('button')
+
+    function mouseOver() {
+        button.setAttribute("class","button2");
+    }
+    
+    function mouseOut() {
+        button.setAttribute("class","button1");
+    }
+
+</script>
+</html>
