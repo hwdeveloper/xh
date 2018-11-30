@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10 Float</title>
+
+    <style>
+        #floatBox{
+            float: left;
+        }
+        a{
+            line-height: 32px;
+            margin-left: 19px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        #searchBox{
+            margin: auto;
+            width: 600px;
+            height: 400px;
+            text-align: center;
+
+        }
+
+        #searchBox img{
+            margin-top: 100px;
+            width: 300px;
+            height: 130px;
+        }
+
+
+
+        #searchInput input{
+            float: left;
+            width: 500px;
+            height: 38px;
+        }
+        #searchInput #button{
+            float: left;
+            width: 90px;
+            height:44px;
+            line-height: 44px;
+            padding: 0;
+            border: 0;
+            background-color: #38f;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+
+        }
+
+
+    </style>
+<body>
+<div id="floatBox">
+    <a href="http://news.baidu.com/">新闻</a>
+    <a href="https://www.hao123.com/">hao123</a>
+    <a href="https://map.baidu.com/">地图</a>
+    <a href="http://v.baidu.com/">视频</a>
+    <a href="https://tieba.baidu.com/index.html?traceid=">贴吧</a>
+</div>
+
+
+<hr style="clear: left"/>
+
+<div id="searchBox">
+    <img src="https://www.baidu.com/img/bd_logo1.png?where=super">
+    <div id="searchInput">
+        <input id="search" />
+        <div id="button">百度一下</div>
+    </div>
+</div>
+
+<script>
+
+    //1,获得节点
+    var input =document.getElementById('search');
+
+    input.oninput=function () {
+        console.log(input.value);
+    }
+
+  
+
+</script>
+</body>
+</html>
